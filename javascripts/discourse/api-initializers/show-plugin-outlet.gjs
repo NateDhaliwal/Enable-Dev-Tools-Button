@@ -5,6 +5,12 @@ import { apiInitializer } from "discourse/lib/api";
 
 
 export default apiInitializer("1.0", (api) => {
-  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @icon="eye" /></li></template>;
+  class ShowPluginOutlets {
+    @action
+    show_plugin_outlets_action {
+      console.log('HH');
+    }
+  }
+  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @action="{{this.show_plugin_outlets_action}}" @icon="eye" /></li></template>;
   api.headerIcons.add("show-dev-tools", ShowDevToolsIcon);
 });
