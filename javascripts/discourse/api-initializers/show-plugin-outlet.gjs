@@ -6,7 +6,7 @@ import { apiInitializer } from "discourse/lib/api";
 export default class ShowDevTools extends Component {
   export default apiInitializer("1.0", (api) => {
     @action
-    get show_plugin_outlets {
+    show_plugin_outlets() {
       enableDevTools()
     }
     api.headerIcons.add("some-unique-name", 
