@@ -9,6 +9,6 @@ export default apiInitializer("1.0", (api) => {
   show_plugin_outlets() {
     enableDevTools()
   }
-  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @action="{{this.show_plugin_outlets}}" @icon="eye" /></li></template>
-  api.headerIcons.add("some-unique-name", ShowDevToolsIcon);
+  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @action="{{this.show_plugin_outlets}}" @icon="eye" /></li></template>;
+  api.headerIcons.add("show-dev-tools", ShowDevToolsIcon);
 });
