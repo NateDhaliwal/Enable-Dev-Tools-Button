@@ -9,7 +9,7 @@ export default apiInitializer("1.0", (api) => {
   show_plugin_outlets() {
     enableDevTools()
   }
-  export default class ShowDevTools extends Component {
+  class ShowDevTools extends Component {
     api.headerIcons.add("some-unique-name", 
                         <template>
                           <li><DButton class="icon btn-flat" @action="{{this.show_plugin_outlets}}" @icon="eye" /></li>
