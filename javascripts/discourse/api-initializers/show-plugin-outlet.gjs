@@ -4,7 +4,7 @@ import { action } from "@ember/object";
 import { apiInitializer } from "discourse/lib/api";
 
 
-export default apiInitializer("1.0", (api) => {
+export default apiInitializer("1.14.0", (api) => {
   api.renderInOutlet(
     'before-header-panel',
     class ShowPluginOutlets extends Component {
@@ -14,7 +14,7 @@ export default apiInitializer("1.0", (api) => {
       }
       <template>
         <li>
-          <DButton class="icon btn-flat" @action="{{this.show_plugin_outlets_action}}" @icon="eye" />
+          <DButton class="icon btn-flat" @icon="eye" />
         </li>
       </template>
     }
