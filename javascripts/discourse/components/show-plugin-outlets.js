@@ -7,10 +7,6 @@ export default class ShowPluginOutlets extends Component {
   
   @action
   show_plugin_outlets_action() {
-    console.log(localStorage.getItem('devToolsShowing'));
-    if (localStorage.getItem('devToolsShowing') === null) {
-      localStorage.setItem('devToolsShowing', false);
-    }
     let devToolsShowing = localStorage.getItem('devToolsShowing');
     
     if (devToolsShowing) {
