@@ -3,11 +3,15 @@ import { action } from "@ember/object";
 import { tracked } from '@glimmer/tracking';
 
 export default class ShowPluginOutlets extends Component {
-  @tracked buttonIcon;
+  @tracked buttonIcon = "bug";
   
   @action
   show_plugin_outlets_action() {
+    
     let devToolsShowing = localStorage.getItem('devToolsShowing');
+    if (devToolsShowing === null) {
+      devToolsShowing  = localStorage.setItem('devToolsShowing', false);
+    }
     
     if (devToolsShowing) {
       localStorage.setItem('devToolsShowing', false);
@@ -16,7 +20,7 @@ export default class ShowPluginOutlets extends Component {
       
     } else {
       localStorage.setItem('devToolsShowing', true);
-      this.buttonIcon = "bug"
+      this.buttonIcon = "bug";
       enableDevTools();
       
     }
