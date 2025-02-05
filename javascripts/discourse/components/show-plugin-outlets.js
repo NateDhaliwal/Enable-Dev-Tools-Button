@@ -10,13 +10,11 @@ export default class ShowPluginOutlets extends Component {
     localStorage.setItem('devToolsShowing', 'hiii');
     console.log(localStorage.getItem('devToolsShowing'));
     if (devToolsShowing) {
-      localStorage.setItem('devToolsShowing', false);
+      console.log('SHowing');
       disableDevTools();
 
     } else {
-      localStorage.setItem('devToolsShowing', true);
-      console.log("Enabling")
-      
+      console.log('Not showing');
       enableDevTools();
 
     }
