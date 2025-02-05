@@ -7,6 +7,7 @@ export default class ShowPluginOutlets extends Component {
   
   @action
   show_plugin_outlets_action() {
+    console.log(this.devToolsShowing);
     if (this.devToolsShowing) {
       disableDevTools();
       this.devToolsShowing = false;
