@@ -5,8 +5,8 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("1.0", (api) => {
   @action
-  show_plugin_outlets {
-    
+  get show_plugin_outlets {
+    enableDevTools()
   }
   api.headerIcons.add("some-unique-name", 
                       <template>
