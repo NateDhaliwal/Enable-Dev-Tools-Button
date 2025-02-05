@@ -12,6 +12,8 @@ export default class ShowPluginOutlets extends Component {
 
     } else {
       localStorage.setItem('devToolsShowing', true);
+      console.log("Enabling")
+      console.log(localStorage.getItem('devToolsShowing'));
       enableDevTools();
 
     }
