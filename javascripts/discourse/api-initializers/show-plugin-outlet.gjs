@@ -5,10 +5,6 @@ import { apiInitializer } from "discourse/lib/api";
 
 
 export default apiInitializer("1.0", (api) => {
-  @action
-  show_plugin_outlets() {
-    enableDevTools()
-  }
-  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @action="{{this.show_plugin_outlets}}" @icon="eye" /></li></template>;
+  const ShowDevToolsIcon = <template><li><DButton class="icon btn-flat" @icon="eye" /></li></template>;
   api.headerIcons.add("show-dev-tools", ShowDevToolsIcon);
 });
