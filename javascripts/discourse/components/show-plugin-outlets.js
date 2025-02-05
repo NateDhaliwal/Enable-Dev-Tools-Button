@@ -4,10 +4,10 @@ import { tracked } from '@glimmer/tracking';
 
 export default class ShowPluginOutlets extends Component {
   @tracked buttonIcon = "bug";
-  
+  let devToolsShowing = localStorage.getItem('devToolsShowing');
   @action
   show_plugin_outlets_action() {
-    let devToolsShowing = localStorage.getItem('devToolsShowing');
+    
     
     if (devToolsShowing) {
       localStorage.setItem('devToolsShowing', false);
