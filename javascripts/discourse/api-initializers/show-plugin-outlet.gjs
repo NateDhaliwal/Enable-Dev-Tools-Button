@@ -7,7 +7,7 @@ import { apiInitializer } from "discourse/lib/api";
 export default apiInitializer("1.0", (api) => {
   api.renderInOutlet(
     'before-header-panel',
-    class ShowPluginOutlets {
+    class ShowPluginOutlets extends Component {
       @action
       show_plugin_outlets_action {
         console.log('HH');
