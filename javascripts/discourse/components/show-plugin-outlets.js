@@ -14,6 +14,6 @@ export default class ShowPluginOutlets extends Component {
       enableDevTools();
       this.devToolsShowing = true;
     }
-    
+    return;
   }
 }
