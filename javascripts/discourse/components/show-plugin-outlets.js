@@ -7,12 +7,14 @@ export default class ShowPluginOutlets extends Component {
   
   @action
   show_plugin_outlets_action() {
-    if (this.devToolsShowing == true) {
-      disableDevTools();
+    if (this.devToolsShowing) {
       this.devToolsShowing = false;
-    } else if (this.devToolsShowing == false) {
-      enableDevTools();
+      disableDevTools();
+      
+    } else {
       this.devToolsShowing = true;
+      enableDevTools();
+      
     }
   }
 }
