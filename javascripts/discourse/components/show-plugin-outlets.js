@@ -10,7 +10,7 @@ export default class ShowPluginOutlets extends Component {
     if (this.devToolsShowing == true) {
       disableDevTools();
       this.devToolsShowing = false;
-    } else if (this.devToolsShowing == true) {
+    } else if (this.devToolsShowing == false) {
       enableDevTools();
       this.devToolsShowing = true;
     }
