@@ -12,7 +12,7 @@ export default class ShowPluginOutlets extends Component {
       disableDevTools();
       
     } else {
-      ocalStorage.setItem('devToolsShowing', true);
+      localStorage.setItem('devToolsShowing', true);
       enableDevTools();
       
     }
