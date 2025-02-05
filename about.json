@@ -6,7 +6,7 @@
   "authors": "NateDhaliwal",
   "theme_version": "1.0.0",
   "minimum_discourse_version": null, 
-  "maximum_discourse_version": null
+  "maximum_discourse_version": null,
   "modifiers": {
     "svg_icons": [
       "bug",
