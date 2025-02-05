@@ -9,12 +9,12 @@ export default apiInitializer("1.14.0", (api) => {
     'before-header-panel',
     class ShowPluginOutlets extends Component {
       @action
-      show_plugin_outlets_action {
+      show_plugin_outlets_action() {
         console.log('HH');
       }
       <template>
         <li>
-          <DButton class="icon btn-flat" @icon="eye" />
+          <DButton class="icon btn-flat" @action="{{this.show_plugin_outlets_action}}" @icon="eye" />
         </li>
       </template>
     }
