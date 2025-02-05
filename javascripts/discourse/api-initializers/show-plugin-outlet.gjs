@@ -7,7 +7,7 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("1.14.0", (api) => {
   
-  api.addToHeaderIcons(
+  api.HeaderIcons.add(
     'eye',
     class ShowPluginOutlets extends Component {
       @tracked devToolsShowing = false;
