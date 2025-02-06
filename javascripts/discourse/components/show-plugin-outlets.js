@@ -7,13 +7,13 @@ export default class ShowPluginOutlets extends Component {
   show_plugin_outlets_action() {
     //let devToolsShowing = localStorage.setItem('devToolsShowing', false);
     console.log(localStorage.getItem('devToolsShowing'));
-    if (devToolsShowing) {
-      let devToolsShowing = localStorage.setItem('devToolsShowing', false);
+    if (devToolsShowing == 'true') {
+      let devToolsShowing = localStorage.setItem('devToolsShowing', 'false');
       console.log('Showing');
       disableDevTools();
 
     } else {
-      let devToolsShowing = localStorage.setItem('devToolsShowing', true);
+      let devToolsShowing = localStorage.setItem('devToolsShowing', 'true');
       console.log('Not showing');
       enableDevTools();
 
