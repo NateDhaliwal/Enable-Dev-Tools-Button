@@ -1,8 +1,8 @@
 {
-  "name": "Show Plugin Outlets",
+  "name": "Enable Dev Tools Button",
   "component": true,
-  "license_url": null,
-  "about_url": null,
+  "license_url": "",
+  "about_url": "",
   "authors": "NateDhaliwal",
   "theme_version": "1.0.0",
   "minimum_discourse_version": null, 
