@@ -1,4 +1,4 @@
-import ShowPluginOutlets from "../components/show-plugin-outlets";
+import ShowPluginOutlets from "../components/enable-dev-tools-button";
 import { apiInitializer } from "discourse/lib/api";
 
 
