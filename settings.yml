@@ -1,0 +1,6 @@
+admin_only:
+  type: bool
+  default: false
+  description:
+    en:
+      "Setting to show the button only to admins."
