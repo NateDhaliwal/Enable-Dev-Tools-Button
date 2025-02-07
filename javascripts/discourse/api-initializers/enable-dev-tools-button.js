@@ -3,9 +3,20 @@ import { apiInitializer } from "discourse/lib/api";
 
 
 export default apiInitializer("1.14.0", (api) => {
-  api.headerIcons.add(
-    'eye',
-    ShowPluginOutlets,
-    { before: "search" }
-  );
+  let currentUser = api.getCurrentUser();
+  if (settings.admin_only) {
+    if (currentUser.admin) {
+      api.headerIcons.add(
+        'eye',
+        ShowPluginOutlets,
+        { before: "search" }
+      );
+    }
+  } else {
+    api.headerIcons.add(
+      'eye',
+      ShowPluginOutlets,
+      { before: "search" }
+    );
+  }
 });
