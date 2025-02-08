@@ -1,3 +1,10 @@
+logged_in_only:
+  type: bool
+  default: true
+  description:
+    en:
+      "Setting to show the button only to logged in users."
+
 admin_only:
   type: bool
   default: false
