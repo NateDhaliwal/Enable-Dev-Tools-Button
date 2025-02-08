@@ -8,6 +8,7 @@ export default apiInitializer("1.14.0", (api) => {
         'eye',
         ShowPluginOutlets,
         { before: "search" }
+    );
   }
   
   let currentUser = api.getCurrentUser();
@@ -16,7 +17,7 @@ export default apiInitializer("1.14.0", (api) => {
   }
   if (settings.admin_only) {
     if (currentUser.admin) {
-      displayButton()
+      displayButton();
     }
   } else {
     displayButton();
