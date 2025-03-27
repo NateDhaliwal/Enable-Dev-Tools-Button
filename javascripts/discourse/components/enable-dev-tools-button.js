@@ -2,7 +2,7 @@ import Component from "@glimmer/component";
 import { tracked } from '@glimmer/tracking';
 import { action } from "@ember/object";
 
-export default class ShowPluginOutlets extends Component {
+export default class EnableDevToolsButton extends Component {
   @tracked buttonIcon = localStorage.getItem('buttonIcon');
   @action
   show_plugin_outlets_action() {
