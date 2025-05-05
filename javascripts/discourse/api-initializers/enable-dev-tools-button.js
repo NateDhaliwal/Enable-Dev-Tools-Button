@@ -5,7 +5,7 @@ import { apiInitializer } from "discourse/lib/api";
 export default apiInitializer("1.14.0", (api) => {
   function displayButton() {
     api.headerIcons.add(
-        'bug',
+        'enable-dev-tools-button-icon',
         EnableDevToolsButton,
         { before: "search" }
     );
