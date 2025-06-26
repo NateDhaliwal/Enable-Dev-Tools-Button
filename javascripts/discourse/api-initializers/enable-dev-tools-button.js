@@ -12,7 +12,7 @@ export default apiInitializer("1.14.0", (api) => {
   }
   
   let currentUser = api.getCurrentUser();
-  if (settings.logged_in_only && currentUser) {
+  if (settings.logged_in_only && currentUser != null) {
     displayButton();
   }
   
