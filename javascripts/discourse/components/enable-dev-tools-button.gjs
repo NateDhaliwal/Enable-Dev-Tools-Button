@@ -22,6 +22,6 @@ export default class EnableDevToolsButton extends Component {
   }
 
   <template>
-  <DButton class="icon btn-flat enable-dev-tools-button-icon" @action={{this.show_plugin_outlets_action}} @icon={{this.buttonIcon}} />
+    <DButton class="icon btn-flat enable-dev-tools-button-icon" @action={{this.show_plugin_outlets_action}} @icon={{this.buttonIcon}} />
   </template>
 }
