@@ -15,7 +15,7 @@ export default apiInitializer("1.14.0", (api) => {
 
   if (settings.admin_only && currentUser.admin) {
     displayButton();
-  } else if (settings.logged_in_only && currentUser != null) {
+  } else if (settings.logged_in_only && currentUser !== null && !settings.admin_only) {
     displayButton();
   }
 });
